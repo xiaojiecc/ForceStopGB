@@ -44,7 +44,7 @@
 
 ```
 Linux/Mac OS X命令行> # Linux / Mac OS X使用
-Linux/Mac OS X命令行> patch -p0 < api-23.smali.patch
+Linux/Mac OS X命令行> patch -p0 < api-24.smali.patch
 ```
 
 在Windows的某些版本下(如windows 7)，名称中含`patch`的程序，必须额外加上特定的`manifest`，否则不能运行，所以换个名字吧。此外，由于补丁文件不是在Windows下生成，所以需要先转换成Windows的\r\n格式。
