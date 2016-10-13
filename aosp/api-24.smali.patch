@@ -531,8 +531,17 @@ diff -ruN -b services/com/android/server/am/PreventRunningUtils.smali services-p
 +
 +    move-result v1
 +
++    if-nez v1, :cond_1
++
++    const-string v1, "android.intent.category.LAUNCHER"
++
++    invoke-virtual {p2, v1}, Landroid/content/Intent;->hasCategory(Ljava/lang/String;)Z
++
++    move-result v1
++
 +    if-eqz v1, :cond_0
 +
++    :cond_1
 +    sget-object v1, Lcom/android/server/am/PreventRunningUtils;->mAm:Lcom/android/server/am/ActivityManagerService;
 +
 +    invoke-virtual {v1, p1}, Lcom/android/server/am/ActivityManagerService;->getRecordForAppLocked(Landroid/app/IApplicationThread;)Lcom/android/server/am/ProcessRecord;
