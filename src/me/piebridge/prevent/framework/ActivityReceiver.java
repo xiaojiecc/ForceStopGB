@@ -308,7 +308,7 @@ abstract class ActivityReceiver extends BroadcastReceiver {
         INotificationManager sINM = INotificationManager.Stub.asInterface(ServiceManager.getService(Context.NOTIFICATION_SERVICE));
         try {
             ApplicationInfo info = mContext.getPackageManager().getApplicationInfo(packageName, 0);
-            int priority = sINM.getPackagePriority(packageName, info.uid);
+            int priority = sINM.getPriority(packageName, info.uid);
             if (priority == Notification.PRIORITY_MAX) {
                 PreventLog.d(packageName + " has high priority " + priority + ", cannot stop");
                 return true;

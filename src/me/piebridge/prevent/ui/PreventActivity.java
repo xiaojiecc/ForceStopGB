@@ -163,7 +163,8 @@ public class PreventActivity extends FragmentActivity implements ViewPager.OnPag
         if (PreventIntent.ACTION_NOT_SUPPORTED.equals(getIntent().getAction())) {
             reportBug();
         } else if (!BuildConfig.RELEASE) {
-            showTestDialog();
+            initialize();
+            //showTestDialog();
         } else {
             initialize();
         }

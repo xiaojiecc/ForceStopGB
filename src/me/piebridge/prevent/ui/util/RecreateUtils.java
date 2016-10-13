@@ -65,7 +65,7 @@ public class RecreateUtils {
             IBinder token = (IBinder) mToken.get(activity);
             ActivityThread mainThread = (ActivityThread) mMainThread.get(activity);
             IApplicationThread applicationThread = mainThread.getApplicationThread();
-            applicationThread.scheduleRelaunchActivity(token, null, null, 0, false, null);
+            applicationThread.scheduleRelaunchActivity(token, null, null, 0, false, null, null, false);
         }
     }
 

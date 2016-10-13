@@ -11,6 +11,6 @@ import java.util.List;
   */
 public interface IApplicationThread {
 
-    void scheduleRelaunchActivity(IBinder token, List pendingResults, List pendingNewIntents, int configChanges, boolean notResumed, Configuration config) throws RemoteException;
+    void scheduleRelaunchActivity(IBinder token, List pendingResults, List pendingNewIntents, int configChanges, boolean notResumed, Configuration config, Configuration overrideConfig, boolean preserveWindow) throws RemoteException;
 
 }

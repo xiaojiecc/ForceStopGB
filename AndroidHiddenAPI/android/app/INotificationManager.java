@@ -2,7 +2,7 @@ package android.app;
 
 public interface INotificationManager {
 
-    public int getPackagePriority(String pkg, int uid) throws android.os.RemoteException;
+    public int getPriority(String pkg, int uid) throws android.os.RemoteException;
 
     public static abstract class Stub {
 
