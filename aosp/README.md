@@ -9,3 +9,7 @@
 # Android 6.0 (SDK 23)
 
 [readme-6.0-zh.md](readme-6.0-zh.md)
+
+# Android 7.0 (SDK 24)
+
+[readme-7.0-zh.md](readme-7.0-zh.md)
