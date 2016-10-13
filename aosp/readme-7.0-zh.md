@@ -34,6 +34,14 @@
 
 ## 反编译 `services`
 
+### 反编译 `services.jar`
+
+`baksmali`加上`--di false --sl`参数是为了去掉调试信息，因为补丁文件也是这样生成的。
+
+```
+命令行> java -jar baksmali.jar disassemble services.jar -a 24 --di false --sl -o services
+```
+
 ### 反编译 `services.odex`
 
 ```
